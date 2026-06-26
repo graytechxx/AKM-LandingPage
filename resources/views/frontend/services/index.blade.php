@@ -72,7 +72,7 @@
                         </ul>
                         
                         <div class="pt-6 border-t border-gray-100">
-                            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in design consultation' : 'Halo, saya tertarik konsultasi desain interior') }}" 
+                            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in design consultation' : 'Halo, saya tertarik konsultasi desain interior') }}" 
                                target="_blank" rel="noopener noreferrer"
                                class="block w-full py-3 text-center rounded-lg font-semibold transition duration-300 bg-green-600 hover:bg-green-700 text-white">
                                 {{ app()->getLocale() === 'en' ? 'Chat on WhatsApp' : 'Chat di WhatsApp' }}
@@ -194,16 +194,16 @@
             
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-amber-200"></div>
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-amber-200"></div>
                 
                 <div class="space-y-12 md:space-y-0">
                     <!-- Step 1 -->
                     <div class="relative md:flex items-center justify-between">
                         <div class="hidden md:block w-5/12"></div>
-                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
                             1
                         </div>
-                        <div class="md:w-5/12 md:pl-12">
+                        <div class="pl-12 md:pl-12 md:w-5/12">
                             <div class="bg-white p-6 rounded-xl shadow-lg">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ __('pages.services.steps.consultation.title') }}</h3>
                                 <p class="text-gray-600">{{ __('pages.services.steps.consultation.description') }}</p>
@@ -212,26 +212,26 @@
                     </div>
                     
                     <!-- Step 2 -->
-                    <div class="relative md:flex items-center justify-between">
-                        <div class="md:w-5/12 md:pr-12 md:text-right">
+                    <div class="relative md:flex items-center justify-between animate-fade-in">
+                        <div class="pl-12 md:pl-0 md:pr-12 md:w-5/12 md:text-right">
                             <div class="bg-white p-6 rounded-xl shadow-lg">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ __('pages.services.steps.design.title') }}</h3>
                                 <p class="text-gray-600">{{ __('pages.services.steps.design.description') }}</p>
                             </div>
                         </div>
-                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
                             2
                         </div>
                         <div class="hidden md:block w-5/12"></div>
                     </div>
                     
                     <!-- Step 3 -->
-                    <div class="relative md:flex items-center justify-between">
+                    <div class="relative md:flex items-center justify-between animate-fade-in">
                         <div class="hidden md:block w-5/12"></div>
-                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
                             3
                         </div>
-                        <div class="md:w-5/12 md:pl-12">
+                        <div class="pl-12 md:pl-12 md:w-5/12">
                             <div class="bg-white p-6 rounded-xl shadow-lg">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ __('pages.services.steps.implementation.title') }}</h3>
                                 <p class="text-gray-600">{{ __('pages.services.steps.implementation.description') }}</p>
@@ -240,14 +240,14 @@
                     </div>
                     
                     <!-- Step 4 -->
-                    <div class="relative md:flex items-center justify-between">
-                        <div class="md:w-5/12 md:pr-12 md:text-right">
+                    <div class="relative md:flex items-center justify-between animate-fade-in">
+                        <div class="pl-12 md:pl-0 md:pr-12 md:w-5/12 md:text-right">
                             <div class="bg-white p-6 rounded-xl shadow-lg">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ __('pages.services.steps.handover.title') }}</h3>
                                 <p class="text-gray-600">{{ __('pages.services.steps.handover.description') }}</p>
                             </div>
                         </div>
-                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold z-10">
                             4
                         </div>
                         <div class="hidden md:block w-5/12"></div>
@@ -266,7 +266,7 @@
             <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
                 {{ __('pages.services.cta_subtitle') }}
             </p>
-            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m ready to start my interior design project' : 'Halo, saya siap memulai proyek desain interior saya') }}" 
+            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m ready to start my interior design project' : 'Halo, saya siap memulai proyek desain interior saya') }}" 
                target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition duration-300 transform hover:-translate-y-1">
                 {{ app()->getLocale() === 'en' ? 'Start on WhatsApp' : 'Mulai di WhatsApp' }}

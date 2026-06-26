@@ -99,15 +99,21 @@ class RouteServiceProvider extends ServiceProvider
                 ->firstOrFail();
         });
 
-        // Route model binding for Service by slug
+        // Route model binding for Service by slug or ID
         Route::bind('service', function ($value) {
+            if (is_numeric($value)) {
+                return \App\Models\Service::findOrFail($value);
+            }
             return \App\Models\Service::where('slug', $value)
                 ->where('is_active', true)
                 ->firstOrFail();
         });
 
-        // Route model binding for Pricing Package by slug
+        // Route model binding for Pricing Package by slug or ID
         Route::bind('pricing', function ($value) {
+            if (is_numeric($value)) {
+                return \App\Models\PricingPackage::findOrFail($value);
+            }
             return \App\Models\PricingPackage::where('slug', $value)
                 ->where('is_active', true)
                 ->firstOrFail();

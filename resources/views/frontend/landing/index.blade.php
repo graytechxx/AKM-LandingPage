@@ -33,7 +33,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </a>
-                    <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
+                    <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
                        target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-white hover:text-green-600 transition duration-300">
                         {{ app()->getLocale() === 'en' ? 'Chat on WhatsApp' : 'Chat di WhatsApp' }}
@@ -225,7 +225,7 @@
                     <p class="text-sm md:text-base text-gray-600 group-hover:text-gray-100 mb-3 md:mb-4">
                         {{ app()->getLocale() === 'en' ? 'Professional consultation to plan your interior design. Get expert advice on space planning, color selection, and material choices.' : 'Konsultasi profesional untuk merencanakan desain interior Anda. Dapatkan saran ahli tentang perencanaan ruang, pemilihan warna, dan pilihan material.' }}
                     </p>
-                    <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in design consultation' : 'Halo, saya tertarik konsultasi desain interior') }}" 
+                    <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in design consultation' : 'Halo, saya tertarik konsultasi desain interior') }}" 
                        target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm md:text-base font-semibold rounded transition duration-300">
                         {{ app()->getLocale() === 'en' ? 'Chat on WhatsApp' : 'Chat di WhatsApp' }}
@@ -342,7 +342,7 @@
                             <p class="text-white/70 text-xs md:text-sm mb-6">
                                 {{ app()->getLocale() === 'en' ? 'Based on project scope & requirements' : 'Berdasarkan ruang lingkup & kebutuhan proyek' }}
                             </p>
-                            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
+                            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
                                target="_blank" rel="noopener noreferrer"
                                class="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 md:py-4 rounded-lg font-bold text-sm md:text-base transition duration-300 transform hover:-translate-y-1">
                                 {{ app()->getLocale() === 'en' ? 'Get Free Quote on WhatsApp' : 'Dapatkan Penawaran Gratis via WhatsApp' }}
@@ -419,7 +419,7 @@
             <p class="text-white/90 text-sm sm:text-base md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto px-2">
                 {{ __('pages.home.cta_subtitle') }}
             </p>
-            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
+            <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in getting a quote for my interior design project.' : 'Halo, saya tertarik mendapatkan penawaran untuk proyek desain interior saya.') }}" 
                target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-green-600 hover:bg-green-700 text-white text-sm md:text-base font-semibold rounded-lg transition duration-300">
                 {{ app()->getLocale() === 'en' ? 'Get Free Consultation' : 'Dapatkan Konsultasi Gratis' }}

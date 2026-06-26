@@ -105,7 +105,7 @@ return [
         'description' => 'Read testimonials and reviews from AKM Interior Design clients. 98% client satisfaction with our work. 4.9/5 rating from 500+ clients.',
         'keywords' => 'AKM Interior Design testimonials, interior design reviews, client experience interior, home design service reviews',
         'og_title' => 'Client Testimonials - 98% Satisfaction Rate',
-        'og_description' => 'What do they say? See the experience of 500+ clients who have worked with AKM Interior Design'.
+        'og_description' => 'What do they say? See the experience of 500+ clients who have worked with AKM Interior Design',
     ],
 
     /*
@@ -128,7 +128,7 @@ return [
     */
     'faq' => [
         'title' => 'FAQ - AKM Interior Design Frequently Asked Questions',
-        'description' => 'Find answers to common questions about services, processes, pricing, and how AKM Interior Design works'.
+        'description' => 'Find answers to common questions about services, processes, pricing, and how AKM Interior Design works',
         'keywords' => 'interior design FAQ, interior common questions, interior design process, interior design project',
         'og_title' => 'FAQ - Everything You Need to Know',
         'og_description' => 'Complete answers to common questions about our services and working process.',

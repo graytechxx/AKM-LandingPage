@@ -149,7 +149,7 @@
                             <a href="{{ $wa_link }}" 
                                target="_blank" rel="noopener noreferrer"
                                class="block w-full py-3 text-center bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-xl transition-all duration-300 transform group-hover:shadow-lg group-hover:scale-105">
-                                {{ app()->getLocale() === 'en' ? 'Konsultasi Gratis' : 'Free Consultation' }}
+                                {{ app()->getLocale() === 'en' ? 'Free Consultation' : 'Konsultasi Gratis' }}
                             </a>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                                 
                                 <!-- Title -->
                                 <h4 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{{ app()->getLocale() === 'en' ? '2-Room Space' : 'Ruang 2 Kamar' }}</h4>
-                                <p class="text-gray-600 text-sm md:text-base mb-6">{{ app()->getLocale() === 'en' ? 'Ideal untuk keluarga kecil' : 'Perfect for small family' }}</p>
+                                <p class="text-gray-600 text-sm md:text-base mb-6">{{ app()->getLocale() === 'en' ? 'Perfect for small family' : 'Ideal untuk keluarga kecil' }}</p>
                                 
                                 <!-- Price -->
                                 <div class="bg-gradient-to-r from-white to-amber-50 rounded-2xl p-6 mb-6 border-2 border-amber-200 shadow-sm">
@@ -193,13 +193,13 @@
                                         <svg class="w-5 h-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0 font-bold" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                         </svg>
-                                        <span class="text-gray-700 text-sm font-medium">{{ app()->getLocale() === 'en' ? 'Konsep desain lengkap' : 'Complete design concept' }}</span>
+                                        <span class="text-gray-700 text-sm font-medium">{{ app()->getLocale() === 'en' ? 'Complete design concept' : 'Konsep desain lengkap' }}</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                         </svg>
-                                        <span class="text-gray-700 text-sm font-medium">{{ app()->getLocale() === 'en' ? 'Visualisasi 3D & gambar kerja' : '3D visualization & drawings' }}</span>
+                                        <span class="text-gray-700 text-sm font-medium">{{ app()->getLocale() === 'en' ? '3D visualization & drawings' : 'Visualisasi 3D & gambar kerja' }}</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -225,7 +225,7 @@
                                 <a href="{{ $wa_link }}" 
                                    target="_blank" rel="noopener noreferrer"
                                    class="block w-full py-3 text-center bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 hover:from-amber-600 hover:via-amber-700 hover:to-orange-700 text-white font-bold rounded-xl transition-all duration-300 transform group-hover:shadow-xl group-hover:scale-105 shadow-lg">
-                                    {{ app()->getLocale() === 'en' ? '🎯 Konsultasi Gratis Sekarang' : '🎯 Free Consultation Now' }}
+                                    {{ app()->getLocale() === 'en' ? '🎯 Free Consultation Now' : '🎯 Konsultasi Gratis Sekarang' }}
                                 </a>
                             </div>
                         </div>

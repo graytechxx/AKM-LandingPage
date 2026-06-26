@@ -13,8 +13,17 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
     <!-- Custom Styles -->
-    <style>
+    <style type="text/tailwindcss">
+        [x-cloak] {
+            display: none !important;
+        }
         .nav-link {
             @apply text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium tracking-wide transition-colors duration-200;
         }

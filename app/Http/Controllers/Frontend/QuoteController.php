@@ -13,7 +13,7 @@ class QuoteController extends Controller
     public function create(): View
     {
         // Get WhatsApp number from settings or use default
-        $whatsappNumber = Setting::get('whatsapp_number', '6281234567890');
+        $whatsappNumber = Setting::get('whatsapp_number', '6285177907912');
         $whatsappMessage = __('pages.quote.whatsapp_message');
 
         return view('frontend.quote.create', compact(
@@ -25,7 +25,7 @@ class QuoteController extends Controller
     public function store(Request $request): RedirectResponse
     {
         // Get WhatsApp number from settings
-        $whatsappNumber = Setting::get('whatsapp_number', '6281234567890');
+        $whatsappNumber = Setting::get('whatsapp_number', '6285177907912');
         $message = __('pages.quote.whatsapp_message');
 
         // Encode message for WhatsApp

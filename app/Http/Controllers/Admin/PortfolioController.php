@@ -15,9 +15,31 @@ class PortfolioController extends Controller
     /**
      * Display a listing of portfolios
      */
-    public function index(): View
+    public function index(Request $request): View
     {
-        $portfolios = Portfolio::latest()->paginate(10);
+        $query = Portfolio::query();
+
+        if ($request->filled('search')) {
+            $search = $request->input('search');
+            $query->where(function($q) use ($search) {
+                $q->where('title_id', 'like', "%{$search}%")
+                  ->orWhere('title_en', 'like', "%{$search}%")
+                  ->orWhere('description_id', 'like', "%{$search}%")
+                  ->orWhere('description_en', 'like', "%{$search}%")
+                  ->orWhere('client', 'like', "%{$search}%")
+                  ->orWhere('location', 'like', "%{$search}%");
+            });
+        }
+
+        if ($request->filled('category')) {
+            $query->where('category', $request->input('category'));
+        }
+
+        if ($request->filled('status')) {
+            $query->where('status', $request->input('status'));
+        }
+
+        $portfolios = $query->latest()->paginate(10)->withQueryString();
         return view('admin.portfolios.index', compact('portfolios'));
     }
 

@@ -214,7 +214,7 @@
                         <p class="text-gray-600 mb-6">
                             {{ __('pages.portfolio.interested_text') }}
                         </p>
-                        <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6281234567890')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in a similar design for my project' : 'Halo, saya tertarik dengan desain serupa untuk proyek saya') }}" 
+                        <a href="https://wa.me/{{ str_replace('+', '', \App\Models\Setting::get('whatsapp_number', '6285177907912')) }}?text={{ urlencode(app()->getLocale() === 'en' ? 'Hi, I\'m interested in a similar design for my project' : 'Halo, saya tertarik dengan desain serupa untuk proyek saya') }}" 
                            target="_blank" rel="noopener noreferrer"
                            class="block w-full py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg text-center transition duration-300 mb-4">
                             {{ app()->getLocale() === 'en' ? 'Chat on WhatsApp' : 'Chat di WhatsApp' }}
