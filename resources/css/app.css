@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        @apply font-sans antialiased text-gray-900 bg-white;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif font-bold;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition duration-300;
+    }
+    
+    .btn-secondary {
+        @apply inline-flex items-center px-6 py-3 border-2 border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-gray-900 hover:text-white transition duration-300;
+    }
+    
+    .section-padding {
+        @apply py-12 sm:py-16 md:py-20;
+    }
+    
+    .container-padding {
+        @apply px-3 sm:px-4 md:px-6 lg:px-8;
+    }
+    
+    .nav-link {
+        @apply text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium tracking-wide transition-colors duration-200;
+    }
+    
+    .nav-link.active {
+        @apply text-gray-900;
+    }
+}
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .bg-overlay {
+        background: linear-gradient(to right, rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.5));
+    }
+    
+    .line-clamp-1 {
+        @apply overflow-hidden text-ellipsis whitespace-nowrap;
+    }
+    
+    .line-clamp-2 {
+        @apply line-clamp-2;
+    }
+    
+    .line-clamp-3 {
+        @apply line-clamp-3;
+    }
+    
+    .line-clamp-4 {
+        @apply line-clamp-4;
+    }
+    
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}

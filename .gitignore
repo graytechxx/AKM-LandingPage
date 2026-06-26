@@ -1,0 +1,48 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+homestead.json
+homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+.DS_Store
+Thumbs.db
+
+# Debug/test files
+check_*.php
+debug_*.php
+test_*.php
+final_test.php
+test_url.bat
+fix-storage.bat
+
+# Laravel 10 specific
+/public/build
+/public/assets
+
+# Vite
+hot
+
+# Logs
+/storage/logs/*
+!storage/logs/.gitignore
+
+# Scheduler
+/storage/framework/cache/data/*
+!storage/framework/cache/data/.gitignore
+
+# Session files
+/storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+
+# Views
+/storage/framework/views/*
+!storage/framework/views/.gitignore
